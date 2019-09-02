@@ -80,3 +80,23 @@ pElements[5].textContent = siteContent["contact"]["address"];
 pElements[6].textContent = siteContent["contact"]["phone"];
 pElements[7].textContent = siteContent["contact"]["email"];
 pElements[8].textContent = siteContent["footer"]["copyright"];
+
+const nav = document.querySelector('header nav a')
+nav.style.color = "green"
+
+// TASK 3
+
+// First Select The Parent
+const navEl = document.querySelector('nav');
+// Then create the added element
+const newNavLink = document.createElement('a');
+newNavLink.appendChild(document.createTextNode('Sign In'))
+// Append the child to parent
+navEl.appendChild(newNavLink);
+
+const footerEl = document.querySelector('footer');
+const newFooter = document.createElement('a');
+newFooter.setAttribute('href', 'http://lambdaschool.com');
+newFooter.textContent = 'Taught By Lambda School';
+
+footerEl.prepend(newFooter);
