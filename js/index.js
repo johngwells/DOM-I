@@ -86,6 +86,7 @@ nav.style.color = "green"
 
 // TASK 3
 
+// AppendChild()
 // First Select The Parent
 const navEl = document.querySelector('nav');
 // Then create the added element
@@ -94,6 +95,7 @@ newNavLink.appendChild(document.createTextNode('Sign In'))
 // Append the child to parent
 navEl.appendChild(newNavLink);
 
+// Prepend()
 const footerEl = document.querySelector('footer');
 const newFooter = document.createElement('a');
 newFooter.setAttribute('href', 'http://lambdaschool.com');
