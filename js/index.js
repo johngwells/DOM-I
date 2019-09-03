@@ -35,7 +35,7 @@ const siteContent = {
   "footer": {
     "copyright" : "Copyright Great Idea! 2018"
   },
-};
+}
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -81,8 +81,13 @@ pElements[6].textContent = siteContent["contact"]["phone"];
 pElements[7].textContent = siteContent["contact"]["email"];
 pElements[8].textContent = siteContent["footer"]["copyright"];
 
-const nav = document.querySelector('header nav a')
-nav.style.color = "green"
+// const nav = document.querySelector('header nav a')
+// nav.style.color = "green"
+
+const nav = document.querySelectorAll('a')
+nav.forEach(element => {
+  element.style.color = "green";
+})
 
 // TASK 3
 
